@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta chatset="utf-8"/>
+    <meta name="viewport">
+	<link rel="stylesheet" type="text/css" href="Calculadora.css" media="screen">
+	<script src="CalculadoraJs.js"></script>
+    <title> Calculadora iTech </title>
+</head>
+
+<body>
+    <div>
+		<br>
+			<h1>
+				<center>
+				<img src="logo.png" width= 7% height=5%>
+				</center>
+				</h1>
+	   
+	</div>
+	
+	<form>
+		
+	    <div>
+			<br>
+		    <center>
+			<label class="label">Valor</label>
+			<br>
+			<input type="number" name="valor" id="valor" placeholder="R$" class="campos" onkeyup="calcular()"> 
+			</center>
+	    </div>
+
+		<div>
+		    <center>
+			<label class="label"> Valor de Entrada</label>
+			<br>
+			<input type="number" name="valorEntrada" id="valorEntrada" placeholder="R$" class="campos" onkeyup="calcular()">
+			</center>
+			<br>
+	    </div>
+
+		<div>
+		    <center>
+			<label class="label"> Débito a vista</label>
+			<br>
+			<input type="number" name="debito" disabled="true" id="debito" placeholder="Débito a vista" class="campoDebito">
+			</center>
+	    </div>
+
+		<br>
+		<center>
+		<table>
+			<caption class="labelParcelamento">Parcelamento</caption>
+			<tr>
+				<th class="label">Crédito</th>
+				<th class="label">Valor Parcela</th>
+				<th class="label">Valor Total</th>
+			</tr>
+
+			<tbody>
+			<tr>
+				<td class="labelTable">1x</td>
+				<td id="dx1" class="labelTable"></td>
+				<td type="number" class="labelTable" id="x1"></td>
+			</tr>
+
+			<tr >
+				<td class="tabela2">2x</td>
+				<td id="dx2" class="tabela2"></td>
+				<td class="tabela2" id="x2"></td>
+			</tr>
+
+			<tr >
+				<td class="labelTable">3x</td>
+				<td id="dx3" class="labelTable"></td>
+				<td class="labelTable" id="x3"></td>
+			</tr>
+
+			<tr >
+				<td class="tabela2">4x</td>
+				<td id="dx4" class="tabela2"></td>
+				<td class="tabela2" id="x4"></td>
+			</tr>
+
+			<tr >
+				<td class="labelTable">5x</td>
+				<td id="dx5" class="labelTable"></td>
+				<td class="labelTable" id="x5"></td>
+			</tr>
+
+			<tr > 
+				<td class="tabela2">6x</td>
+				<td id="dx6" class="tabela2"></td>
+				<td class="tabela2" id="x6"></td>
+			</tr>
+
+			<tr >
+				<td class="labelTable">7x</td>
+				<td id="dx7" class="labelTable"></td>
+				<td class="labelTable" id="x7"></td>
+			</tr>
+
+			<tr >
+				<td class="tabela2">8x</td>
+				<td id="dx8" class="tabela2"></td>
+				<td class="tabela2" id="x8"></td>
+			</tr>
+
+			<tr >
+				<td class="labelTable">9x</td>
+				<td id="dx9" class="labelTable"></td>
+				<td class="labelTable" id="x9"></td>
+			</tr>
+
+			<tr >
+				<td class="tabela2">10x</td>
+				<td id="dx10" class="tabela2"></td>
+				<td class="tabela2" id="x10"></td>
+			</tr>
+
+			<tr >
+				<td class="labelTable">11x</td>
+				<td id="dx11" class="labelTable"></td>
+				<td class="labelTable" id="x11"></td>
+			</tr>
+
+			<tr >
+				<td class="tabela2">12x</td>
+				<td id="dx12" class="tabela2"></td>
+				<td class="tabela2" id="x12"></td>
+			</tr>
+		    </tbody>
+		</table>
+	</center>
+	</form>
+</body>
+
+</html>
